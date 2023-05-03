@@ -1,0 +1,57 @@
+{
+  "name": "koishi-plugin-iframe",
+  "description": "Add more pages to the console",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "author": "Shigma <shigma10826@gmail.com>",
+  "scripts": {
+    "build": "tsc -b && koishi-console build"
+  },
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koishijs/koishi-plugin-iframe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/koishijs/koishi-plugin-iframe/issues"
+  },
+  "homepage": "https://github.com/koishijs/koishi-plugin-iframe",
+  "keywords": [
+    "bot",
+    "chatbot",
+    "koishi",
+    "plugin",
+    "iframe",
+    "router",
+    "console"
+  ],
+  "koishi": {
+    "description": {
+      "en": "Add more pages to the console!",
+      "zh": "为你的控制台添加更多页面！"
+    },
+    "services": {
+      "required": [
+        "console"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@koishijs/plugin-console": "^5.0.0",
+    "koishi": "^4.8.3"
+  },
+  "devDependencies": {
+    "@koishijs/client": "^5.6.1",
+    "@koishijs/plugin-console": "^5.6.1",
+    "@types/node": "^18.15.11",
+    "esbuild": "^0.14.54",
+    "esbuild-register": "^3.4.2",
+    "koishi": "^4.12.4",
+    "typescript": "^4.9.5"
+  }
+}
